@@ -1,13 +1,14 @@
 {
   "expo": {
     "name": "Vampiro",
+    "description": "Juego vampiro en un solo movil",
     "slug": "Vampiro",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.jpg",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,9 +19,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jimenez.vampiro"
     },
     "android": {
+      "package": "com.jimenez.vampiro",
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
@@ -28,6 +31,11 @@
     },
     "web": {
       "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "13e6e006-4b7e-4e3d-8d1e-c3ededa9482a"
+      }
     }
   }
 }
